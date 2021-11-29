@@ -1,0 +1,164 @@
+/* reset */
+
+:root {
+  --color-gray-dark: #4e5968;
+  --color-gray-light: #b0b8c1;
+  --color-gray-opac: #0220470d;
+  --fs-sm: 15px;
+  --fs-md: 30px;
+  --fs-lg: 60px;
+}
+
+* {
+  letter-spacing: -1px;
+}
+
+/* util */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+
+/* design */
+
+.doc-header {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.gnb {
+  display: flex;
+  align-items: center;
+  width: 92%;
+  height: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.doc-title {
+  width: 75.5px;
+  height: 20px;
+  margin-right: 24px;
+}
+
+.gnb-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-gray-dark);
+}
+
+.gnb-list {
+  display: flex;
+  height: 100%;
+}
+
+.gnb-list:first-child {
+  margin-right: 44px;
+}
+
+.gnb-lang {
+  color: var(--color-gray-light);
+}
+
+.gnb-item {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.gnb-item-link {
+  padding: 12px 10px;
+  border-radius: 8px;
+}
+
+.gnb-item-link:hover {
+  background-color: var(--color-gray-opac);
+}
+
+.is-selected-lang {
+  color: var(--color-gray-dark);
+}
+
+.division-line {
+  display: flex;
+  align-items: center;
+}
+
+.main-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-section-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-section-gradient {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
+}
+
+.main-section-cont {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  margin-top: 170px;
+}
+
+.main-section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.download-btn {
+  width: 178px;
+  height: 71px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background-color: #3182f6;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.service-desc {
+  padding: 200px 0;
+}
+
+.service-desc-cont {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: var(--fs-md);
+  line-height: 1.6;
+  text-align: center;
+  white-space: pre-wrap;
+}
