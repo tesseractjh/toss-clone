@@ -51,6 +51,7 @@ button {
 	padding: 0;
 	border: 0;
 	background: none;
+	cursor: pointer;
 }
 a {
 	text-decoration: none;
@@ -58,4 +59,7 @@ a {
 }
 a:visited {
 	color: inherit;
+}
+* {
+	font-family: 'Noto Sans KR', sans-serif;
 }
