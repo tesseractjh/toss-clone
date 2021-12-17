@@ -51,6 +51,10 @@ body {
   margin: 0 auto;
 }
 
+.header-bottom {
+  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+}
+
 .gnb {
   display: flex;
   align-items: center;
@@ -277,7 +281,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  width: 860px;
+  width: 960px;
   height: 420px;
   padding-left: 40px;
   margin-bottom: 70px;
@@ -355,4 +359,41 @@ body {
 
 .security-white {
   color: #ffffff;
+}
+
+.reservation {
+  flex: 1;
+  position: relative;
+  height: 500px;
+  padding: 40px;
+  margin-bottom: 0 30px 30px 0;
+}
+
+.reservation-txt {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.reservation-blue {
+  color: var(--color-blue);
+}
+
+.reservation-blue::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: url('../images/clock.svg') no-repeat;
+}
+
+.reservation-img {
+  position: absolute;
+  width: 540px;
+  top: 0;
+  right: -50px;
 }
