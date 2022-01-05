@@ -152,12 +152,12 @@ body {
   padding-top: 170px;
 }
 
-.section-inner {
+.section-inner,
+.footer-inner {
   position: relative;
   width: 92%;
   height: 100%;
   margin: 0 auto;
-
 }
 
 .main-section-top {
@@ -396,4 +396,127 @@ body {
   width: 540px;
   top: 0;
   right: -50px;
+}
+
+.doc-footer {
+  padding: 50px 0 100px;
+  margin-top: 100px;
+  background-color: #191f28;
+}
+
+.footer-cont {
+  max-width: 1064px;
+  padding: 0 67px;
+  margin: 0 auto;
+}
+
+.site-group-list {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.site-group {
+  width: 170px;
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.site-group:last-of-type {
+  flex: 1;
+}
+
+.site-group > li {
+  height: 30px;
+}
+
+.site-group > li:first-child {
+  margin-bottom: 5px;
+}
+
+.site-group-title {
+  font-weight: 700;
+  color: #b0b8c1;
+}
+
+.site-group-item {
+  color: #6b7684;
+}
+
+.site-group-item:hover {
+  text-decoration: underline;
+}
+
+.footer-address-title {
+  padding-bottom: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #b0b8c1;
+}
+
+.footer-address-item {
+  font-size: 13px;
+  line-height: 20px;
+  color: #8b95a1;
+}
+
+.footer-address-link {
+  font-size: 13px;
+  color: #6b7684;
+}
+
+.footer-address-link:hover {
+  text-decoration: underline;
+}
+
+.footer-term-list {
+  display: flex;
+  padding: 24px 0 30px;
+}
+
+.footer-term-list > li {
+  display: list-item;
+  padding-right: 30px;
+  text-align: -webkit-match-parent
+}
+
+.footer-term-item {
+  font-size: 13px;
+  line-height: 18px;
+  word-break: keep-all;
+  color: #6b7684;
+}
+
+.bold {
+  font-weight: 500;
+  color: #b0b8c1
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-list > li {
+  margin-right: 8px;
+}
+
+.footer-social {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+
+.footer-social-list > li:nth-of-type(1) .footer-social {
+  background: url('../images/icn-facebook.svg') no-repeat;
+}
+.footer-social-list > li:nth-of-type(2) .footer-social {
+  background: url('../images/icn-blog.svg') no-repeat;
+}
+.footer-social-list > li:nth-of-type(3) .footer-social {
+  background: url('../images/icn-naver.svg') no-repeat;
+}
+.footer-social-list > li:nth-of-type(4) .footer-social {
+  background: url('../images/icn-twitter.svg') no-repeat;
+}
+.footer-social-list > li:nth-of-type(5) .footer-social {
+  background: url('../images/icn-instagram.svg') no-repeat;
 }
